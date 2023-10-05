@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: antiquewhite;
+}
+
+input {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+input::placeholder {
+  color: antiquewhite;
+  opacity: 0.5;
+}
+
+input::-ms-input-placeholder {
+  color: antiquewhite;
+}
