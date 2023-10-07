@@ -14,7 +14,7 @@ function Signup() {
       .post("http://localhost:3001/register", { name, email, password })
       .then((result) => {
         console.log(result);
-        navigate("/login");
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
@@ -65,7 +65,7 @@ function Signup() {
       </form>
       <div className="text-xs self-center flex flex-col gap-1">
         <p>Already have an account?</p>
-        <Link to="/login" className="underline w-max self-center">
+        <Link to="/" className="underline w-max self-center">
           Login
         </Link>
       </div>

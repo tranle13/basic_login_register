@@ -7,9 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(
-  "mongodb+srv://orangedev:01031993Wonho%21@cluster-0.eq795uf.mongodb.net/"
-);
+mongoose.connect("mongodb://127.0.0.1:27017/user");
 
 app.post("/register", (req, res) => {
   UserModel.create(req.body)
